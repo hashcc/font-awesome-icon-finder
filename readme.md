@@ -10,5 +10,6 @@ And if you have Mac, [alfred2 + font-awesome](http://blog.ruedap.com/2013/08/07/
 MIT License
 
 ## To do
-- implement copy2clipboard
-- implement shortcut-key
+- set another name to some icons.
+- implement copy2clipboard.
+- implement shortcut-key.
