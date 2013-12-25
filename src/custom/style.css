@@ -33,3 +33,8 @@ div#icons div.icon{
 div#icons div.icon.hide{
   display: none;
 }
+
+div#icons div.icon span.unicode{
+  font-size: 80%;
+  color: #bbb;
+}
