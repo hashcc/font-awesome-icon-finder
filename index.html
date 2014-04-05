@@ -20,7 +20,14 @@
 
 <div class="form-group">
   <label for="keyword">探したいアイコンのキーワードを入れてください</label>
-  <input type="search" class="form-control" id="keyword" disabled="disabled">
+  
+  <div class="progress progress-striped active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+  <span class="sr-only">Now Loading..</span>
+  </div>
+  </div>
+
+  <input type="search" class="form-control" id="keyword">
 </div>
 
 <div id="status"></div>

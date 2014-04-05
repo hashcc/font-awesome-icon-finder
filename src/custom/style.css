@@ -5,6 +5,12 @@ div.container{
 h1{
   text-align: center;
   margin-bottom: 15px;
+  font-weight: bold;
+}
+
+div.progress,
+div.progress-bar{
+  min-height: 40px;
 }
 
 div.form-group input#keyword{
@@ -12,10 +18,29 @@ div.form-group input#keyword{
   font-size: 3em;
   ime-mode: disabled;
   margin-bottom: 1em;
+  width: 80%;
+}
+
+div.form-group input#keyword.follow{
+  width: 70%;
+  opacity: 0.5;
+}
+
+div.form-group input#keyword.follow:hover,
+div.form-group input#keyword.follow:focus{
+  opacity: 1.0;
 }
 
 div#icons{
   font-size: 2.3em;
+}
+
+div#icons div.icon{
+  margin-bottom: 0.2em;
+}
+
+div#icons div.icon.hide{
+  display: none;
 }
 
 div#icons em.fa{
@@ -23,18 +48,31 @@ div#icons em.fa{
 }
 
 div#icons p{
+  position: relative;
+  left: -10px;
   display: inline;
+  white-space: nowrap;
 }
 
-div#icons div.icon{
-  margin-bottom: 0.1em;
-}
-
-div#icons div.icon.hide{
-  display: none;
-}
-
-div#icons div.icon span.unicode{
-  font-size: 80%;
+div#icons div.icon span.unicode,
+div#icons div.icon span.tags{
+  font-size: 70%;
   color: #bbb;
+}
+
+div#icons div.icon span.tags{
+  margin-right: 0.5em;
+}
+
+div#icons div.icon span.tags:before{
+  content: "\f02c";
+  font-family: "FontAwesome";
+  margin-right: 0.2em;
+  color: #ccc;
+}
+
+
+.follow{
+  position: fixed;
+  z-index: 9999;
 }
