@@ -40,9 +40,9 @@ function bootFilter(){
   var interval = 500; // ms
   
   // say "OK" through input-field
-  $("label").html("探したいアイコンのキーワードを入れてください");
+  $("label").html('<a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>というアイコンフォントで提供されているアイコンを検索できるサービスです。探したいアイコンのキーワードを入れてください');
+
   // let the input-field enable
-  
   $(".progress").hide();
   $("#keyword").show().focus();
   stickElement("keyword", 10);
