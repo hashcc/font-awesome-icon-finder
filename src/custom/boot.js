@@ -22,7 +22,7 @@ function load(){
                 .replace(/\&amp;/g, '&')
                 .replace(/<span class=\"muted\">\[&#xf([0-9a-z]{3});\]<\/span>/g, '<span class="unicode">\\f\$1</span>')
                 .replace(/col\-md\-4 col\-sm\-6 col\-lg\-3/g, "col-md-12 icon")
-                .replace(/<p>fa\-/g, "<p>");
+                .replace(/\s\sfa\-([0-9a-z\-]+)/g, "<p>\$1</p>");
 　　　$("#icons").html(content);
       
       // boot input Filter
